@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christianah Epistles - Faith, Hope & Inspiration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- INTRO ANIMATION -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-icon">✍️</div>
+            <h1 class="intro-title">Christiana Epistles</h1>
+            <p class="intro-tagline">Where Faith Meets Words</p>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <!-- LOGO + BRAND NAME -->
+        <div class="nav-logo">
+            <div class="logo-icon">✍️</div>
+            <div class="brand-name">
+                <span class="brand-main">Christiana</span>
+                <span class="brand-sub">Epistles</span>
+            </div>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER MENU -->
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">📖 Welcome to My Blog</div>
+                <h1 class="hero-title">
+                    Sharing Stories of
+                    <span class="highlight">Faith, Hope & Grace</span>
+                </h1>
+                <p class="hero-desc">
+                    Join me on a journey through scripture, personal reflections, and inspirational messages that uplift the soul and strengthen faith.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#blog" class="btn-primary">Read Latest Posts</a>
+                    <a href="#about" class="btn-outline">About Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <span class="card-icon">📖</span>
+                    <span class="card-text">Daily Devotions</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">✨</span>
+                    <span class="card-text">Inspirational Stories</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-icon">🙏</span>
+                    <span class="card-text">Prayer Guides</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- FEATURED POSTS -->
+    <section id="blog" class="featured-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Epistles</h2>
+                <p>Recent reflections and inspirational messages</p>
+            </div>
+
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="post1.jpg" alt="Faith Journey" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+                        <span class="post-category">Faith</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">📅 Dec 15, 2024</span>
+                            <span class="post-read">⏱️ 5 min read</span>
+                        </div>
+                        <h3>Walking by Faith, Not by Sight</h3>
+                        <p>Exploring what it truly means to trust God when the path ahead seems unclear...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="post2.jpg" alt="Grace" onerror="this.style.background='linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'">
+                        <span class="post-category">Grace</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">📅 Dec 10, 2024</span>
+                            <span class="post-read">⏱️ 4 min read</span>
+                        </div>
+                        <h3>The Beauty of God's Grace</h3>
+                        <p>Understanding how grace transforms our lives and renews our spirits daily...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="post3.jpg" alt="Hope" onerror="this.style.background='linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'">
+                        <span class="post-category">Hope</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">📅 Dec 5, 2024</span>
+                            <span class="post-read">⏱️ 6 min read</span>
+                        </div>
+                        <h3>Finding Hope in Difficult Times</h3>
+                        <p>A personal testimony of how God's promises sustained me through life's storms...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Topics</h2>
+                <p>Discover content that speaks to your heart</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="category-icon">📖</span>
+                    <h3>Bible Study</h3>
+                    <p>Deep dives into scripture</p>
+                    <span class="category-count">12 Posts</span>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">🙏</span>
+                    <h3>Prayer Life</h3>
+                    <p>Growing closer to God</p>
+                    <span class="category-count">8 Posts</span>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">✨</span>
+                    <h3>Testimonies</h3>
+                    <p>Stories of God's faithfulness</p>
+                    <span class="category-count">15 Posts</span>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">💝</span>
+                    <h3>Christian Living</h3>
+                    <p>Practical faith in daily life</p>
+                    <span class="category-count">20 Posts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section id="about" class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span class="placeholder-icon">👩‍💼</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>About Christianah</h2>
+                    <p>Hello! I'm Christianah, a passionate writer and devoted follower of Christ. Through this blog, I share my journey of faith, biblical insights, and personal reflections that I hope will encourage and inspire you.</p>
+                    <p>My mission is to create a space where believers can find encouragement, grow in their faith, and discover the beauty of God's word in everyday life.</p>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>📬 Subscribe to My Newsletter</h2>
+                <p>Get weekly inspiration and new posts delivered straight to your inbox</p>
+                <form class="newsletter-form" action="https://formspree.io/f/xanyqjbd" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="hidden" name="_subject" value="New Newsletter Subscription - Christianah Epistles">
+                    <input type="hidden" name="_next" value="https://christianahepistles.com">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+                <div class="newsletter-success" id="newsletterSuccess" style="display: none;">
+                    <p>✅ Thank you for subscribing! Check your email for confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-icon">✍️</div>
+                    <h3>Christianah Epistles</h3>
+                    <p>Sharing faith, hope, and inspiration through the written word.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christianah Epistles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
